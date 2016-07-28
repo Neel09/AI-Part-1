@@ -37,7 +37,7 @@ public class LazyApproach {
 
 	public static Node findRoot(Node node) {
 		System.out.print("\nRoot of " + node.getValue() + " is : ");
-		while (true) {
+		while (node!=null) {
 			if (node.getParent() != null) {
 				node = node.getParent();
 				continue;
